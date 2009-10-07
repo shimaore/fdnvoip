@@ -1,6 +1,6 @@
 Protocole de test
 
-- Appels entants
+- Appels entrants
 
    Appeler depuis une ligne fixe vers le numéro
      avec ringing 180 puis 200
@@ -12,6 +12,8 @@ Protocole de test
      avec ringing mais sans réponse (pas de 200) -- laisser sonner
      avec ringing + CANCEL -- raccrocher avant la réponse
 
+     dans tous les cas, vérifier que le son passe dans les deux sens (two-way audio)
+
    Appeler depuis un portable vers le numéro
      même protocole, vérifier la présentation du numéro
 
@@ -21,6 +23,7 @@ Protocole de test
   Fax
     vérifier le switchover vers T.38
       sur CED -- générer par l'appelé
+    réception d'un fax long (plusieurs pages - une dizaine)
 
   DTMF
     vérifier que RFC2833 est présenté
@@ -49,6 +52,7 @@ Protocole de test
     vérifier le switchover vers T.38
       sur CED -- détecté par le fournisseur
       sur CNG -- provoqué par l'appelant
+    envoi d'un fax long (plusieurs pages - une dizaine)
 
   DTMF
     vérifier que RFC2833 est présenté
