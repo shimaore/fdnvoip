@@ -1,0 +1,56 @@
+Protocole de test
+
+- Appels entants
+
+   Appeler depuis une ligne fixe vers le numéro
+     avec ringing 180 puis 200
+       l'appelant raccroche
+       l'appelé raccroche
+     avec ringing 183 + SDP puis 200
+	     l'appelant raccroche
+	     l'appelé raccroche
+     avec ringing mais sans réponse (pas de 200) -- laisser sonner
+     avec ringing + CANCEL -- raccrocher avant la réponse
+
+   Appeler depuis un portable vers le numéro
+     même protocole, vérifier la présentation du numéro
+
+  Appeler depuis un numéro international
+  	même protocole, vérifier la présentation du numéro
+
+  Fax
+    vérifier le switchover vers T.38
+
+  DTMF
+    vérifier que RFC2833 est présenté
+    vérifier la bonne réception des DTMFs (e.g. pas le mode Asterisk 1.2 avec durée constante)
+    vérifier le bon envoi des DTMFs
+
+  Appel longue durée
+    placer un appel et le laisser connecté pendant 1h
+
+- Appels sortants
+   Appeler depuis SIP
+     appel connecté
+	     l'appelant raccroche
+	     l'appelé raccroche
+     sans réponse -- laisser sonner
+     sans réponse, appel annulé (CANCEL) -- raccrocher avant la réponse
+
+   Protocole vers destinations:
+     appel vers un numéro fixe
+     											mobile
+													vert
+													international
+													urgences
+
+  Fax
+    vérifier le switchover vers T.38
+
+  DTMF
+    vérifier que RFC2833 est présenté
+    vérifier la bonne réception des DTMFs (e.g. pas le mode Asterisk 1.2 avec durée constante)
+    vérifier le bon envoi des DTMFs
+
+  Appel longue durée
+    placer un appel et le laisser connecté pendant 1h
