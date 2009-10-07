@@ -20,6 +20,7 @@ Protocole de test
 
   Fax
     vérifier le switchover vers T.38
+      sur CED -- générer par l'appelé
 
   DTMF
     vérifier que RFC2833 est présenté
@@ -46,6 +47,8 @@ Protocole de test
 
   Fax
     vérifier le switchover vers T.38
+      sur CED -- détecté par le fournisseur
+      sur CNG -- provoqué par l'appelant
 
   DTMF
     vérifier que RFC2833 est présenté
