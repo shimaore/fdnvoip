@@ -7,8 +7,8 @@ Protocole de test
        l'appelant raccroche
        l'appelé raccroche
      avec ringing 183 + SDP puis 200
-	     l'appelant raccroche
-	     l'appelé raccroche
+       l'appelant raccroche
+       l'appelé raccroche
      avec ringing mais sans réponse (pas de 200) -- laisser sonner
      avec ringing + CANCEL -- raccrocher avant la réponse
 
@@ -16,7 +16,7 @@ Protocole de test
      même protocole, vérifier la présentation du numéro
 
   Appeler depuis un numéro international
-  	même protocole, vérifier la présentation du numéro
+    même protocole, vérifier la présentation du numéro
 
   Fax
     vérifier le switchover vers T.38
@@ -32,17 +32,17 @@ Protocole de test
 - Appels sortants
    Appeler depuis SIP
      appel connecté
-	     l'appelant raccroche
-	     l'appelé raccroche
+       l'appelant raccroche
+       l'appelé raccroche
      sans réponse -- laisser sonner
      sans réponse, appel annulé (CANCEL) -- raccrocher avant la réponse
 
    Protocole vers destinations:
      appel vers un numéro fixe
-     											mobile
-													vert
-													international
-													urgences
+                          mobile
+                          vert
+                          international
+                          urgences
 
   Fax
     vérifier le switchover vers T.38
